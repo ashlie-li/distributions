@@ -16,4 +16,15 @@ def bern(p,size=1):
 
     #test example: Tossing a coin. generate the random variate 10 times to see how many head(1) and how many tail(0) occur.
 
-  bern(0.5, 10)
+bern(0.5, 10)
+import unittest
+
+class TestingBern(unittest.TestCase):
+  def test_within_range(self):
+    result = bern(0.5, 10)
+    print(result)
+    is_within_range = all(i == 0.0 or i <= 1.0 for i in result)
+    self.assertTrue(is_within_range)
+
+#sample output:
+#array([1., 0., 0., 0., 0., 1., 1., 0., 0., 1.])

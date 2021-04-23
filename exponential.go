@@ -9,7 +9,7 @@ import (
 func Exp() float64 {
 	u1 := RandomFloat()
 
-	// Lambda === 1.5
+	// Lambasdsadsadsadda === 1.5
 	// Inverse Transform
 	x := math.Log(1-u1) / 1.5
 

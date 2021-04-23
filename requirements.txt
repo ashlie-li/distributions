@@ -1,0 +1,8 @@
+# Please use the command below to install the package:
+# pip3 install -r requirements.txt
+
+# For the python files, the required packages are:
+
+matplotlib
+numpy
+scipy
